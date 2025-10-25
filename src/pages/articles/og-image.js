@@ -16,11 +16,19 @@ export async function generateOgImage(props) {
   const imagePath = `${ogImageDir}/${imageName}`;
   const publicPath = `${process.env.NEXT_PUBLIC_WEBSITE_URL}/og/${imageName}`;
 
+  const shouldSkip = process.env.SKIP_OG === 'true' || process.env.VERCEL === '1';
+
   try {
     fs.statSync(imagePath);
     return publicPath;
   } catch (error) {
     // file does not exists, so we create it
+  }
+
+  if (shouldSkip) {
+    const fallbackBase = process.env.NEXT_PUBLIC_WEBSITE_URL || '';
+    // Return existing placeholder when skipping generation on CI/Vercel
+    return `${fallbackBase}/static/og-blank.png`;
   }
 
   const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
