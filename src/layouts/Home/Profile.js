@@ -6,7 +6,7 @@ import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Divider } from 'components/Divider';
 import { Heading } from 'components/Heading';
-import { Image } from 'components/Image';
+import NextImage from 'next/image';
 import { Link } from 'components/Link';
 import { Section } from 'components/Section';
 import { Text } from 'components/Text';
@@ -81,13 +81,12 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 </div>
               </div>
               <div className={styles.image}>
-                <Image
-                  reveal
-                  delay={100}
-                  placeholder={profileImgPlaceholder}
-                  srcSet={[profileImg, profileImgLarge]}
-                  sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                <NextImage
+                  src={profileImg}
                   alt="Our Team Selfie - 2017"
+                  sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                  placeholder="blur"
+                  priority
                 />
                 <svg
                   aria-hidden="true"
