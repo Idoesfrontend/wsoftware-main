@@ -45,6 +45,13 @@ const App = ({ Component, pageProps }) => {
           <Fragment>
             <Head>
               <link
+                rel="preload"
+                as="font"
+                type="font/woff2"
+                href="/assets/fonts/gotham-book.woff2"
+                crossOrigin="anonymous"
+              />
+              <link
                 rel="canonical"
                 href={`${process.env.NEXT_PUBLIC_WEBSITE_URL}${canonicalRoute}`}
               />
