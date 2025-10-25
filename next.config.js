@@ -4,6 +4,7 @@ module.exports = {
   pageExtensions: ['page.js', 'api.js'],
   // Emit a fully static export into `out/`
   output: 'export',
+  images: { unoptimized: true },
   webpack(config, { isServer }) {
     // Run custom scripts
     if (isServer) {
