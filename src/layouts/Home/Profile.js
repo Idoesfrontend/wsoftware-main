@@ -21,8 +21,8 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      At Winchester Software, we blend innovation and excellence in custom software
-      solutions. Our founder, James Winchester, has led us for over seven years starting
+      At Warwick Software, we blend innovation and excellence in custom software
+      solutions. Our founder, James Warwick, has led us for over seven years starting
       our journey in the vibrant city of{' '}
       <Link href="https://www.google.com/maps/place/Montreal,+QC,+Canada">Montreal</Link>,
       Canada. With a talented team of engineers, creatives, and strategists, we drive
@@ -31,7 +31,7 @@ const ProfileText = ({ visible, titleId }) => (
       Adapting to change, we embrace remote work, tapping into global talent and
       delivering exceptional results. We value lasting relationships. As your trusted
       partner, we guide your digital journey and support your growth. Join us to unlock
-      opportunities, fuel innovation, and achieve digital excellence. Winchester Software
+      opportunities, fuel innovation, and achieve digital excellence. Warwick Software
       is your pathway to success.
     </Text>
     {/* <Text className={styles.description} data-visible={visible} size="l" as="p"></Text> */}

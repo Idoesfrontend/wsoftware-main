@@ -69,7 +69,7 @@ export const Home = () => {
     <div className={styles.home}>
       <Meta
         title="Software Made Easy"
-        description="At WinchesterSoftware, we are proud to be a Montreal-origin company (remote now) pioneering the digital landscape. With our passion for innovation and expertise in custom software and website development, we bring tailored solutions that drive business growth. From cutting-edge applications to captivating online experiences, we empower businesses to thrive in the digital age. Our commitment to excellence, transparent communication, and unwavering customer service sets us apart. Join us on this exciting journey as we transform ideas into reality and propel businesses to new heights. WinchesterSoftware: Your partner in digital success."
+        description="At WarwickSoftware, we are proud to be a Montreal-origin company (remote now) pioneering the digital landscape. With our passion for innovation and expertise in custom software and website development, we bring tailored solutions that drive business growth. From cutting-edge applications to captivating online experiences, we empower businesses to thrive in the digital age. Our commitment to excellence, transparent communication, and unwavering customer service sets us apart. Join us on this exciting journey as we transform ideas into reality and propel businesses to new heights. WarwickSoftware: Your partner in digital success."
       />
       <Intro
         id="intro"

@@ -40,6 +40,7 @@
   grid-column-gap: var(--space2XL);
   max-width: var(--maxWidthL);
   width: 100%;
+  align-items: start;
 
   @media (--mediaTablet) {
     max-width: 600px;
@@ -54,6 +55,7 @@
   align-items: flex-start;
   margin-bottom: 40px;
   transform: translate3d(0, 0, 0);
+  align-self: start;
 }
 
 .title {
@@ -78,7 +80,7 @@
 }
 
 .tag {
-  margin-top: 220px;
+  margin-top: var(--spaceL);
   margin-bottom: 40px;
   display: grid;
   grid-template-columns: var(--space4XL) 1fr;

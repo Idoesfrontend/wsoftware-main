@@ -131,7 +131,7 @@ export const SmartSparrow = () => {
           <ProjectTextRow>
             <ProjectSectionHeading>Our Bead and Butter</ProjectSectionHeading>
             <ProjectSectionText>
-              Unlock the potential of your business with WinchesterSoftwares cutting-edge
+              Unlock the potential of your business with WarwickSoftware’s cutting-edge
               websites and mobile apps. Our expert team specializes in crafting innovative
               digital solutions that go beyond aesthetics. By leveraging state-of-the-art
               technology, we streamline your internal processes, saving you valuable time
@@ -252,7 +252,7 @@ export const SmartSparrow = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>More Efficiency</ProjectSectionHeading>
               <ProjectSectionText>
-                Experience a seamless project journey with WinchesterSoftware. From
+                Experience a seamless project journey with WarwickSoftware. From
                 concept to deployment, we take care of every aspect of project management
                 and the creative process. Through collaborative calls and emails, your
                 input guides our expert team to craft tailor-made solutions. No coding or
@@ -283,7 +283,7 @@ export const SmartSparrow = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Book a Consultation today!</ProjectSectionHeading>
               <ProjectSectionText>
-                Unlock the potential of your business with WinchesterSoftwares exceptional
+                Unlock the potential of your business with WarwickSoftware’s exceptional
                 custom-tailored software solutions.{' '}
                 <Link href="https://calendly.com/d/z6g-8d7-dnp/introductory-call?month=2023-05">
                   Call us today

@@ -3,7 +3,8 @@
   "outputDirectory": "out",
   "framework": null,
   "env": {
-    "SKIP_OG": "true"
+    "SKIP_OG": "true",
+    "NEXT_PUBLIC_WEBSITE_URL": "https://warwicksoftware.com"
   }
 }
 

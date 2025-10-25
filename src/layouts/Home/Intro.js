@@ -65,7 +65,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
             <DisplacementSphere />
             <header className={styles.text}>
               <h1 className={styles.name} data-visible={visible} id={titleId}>
-                <DecoderText text="WinchesterSoftware" delay={300} />
+                <DecoderText text="WarwickSoftware" delay={300} />
               </h1>
               <Heading level={0} as="h2" className={styles.title}>
                 <VisuallyHidden className={styles.label}>
@@ -107,7 +107,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                 </div>
               </Heading>
             </header>
-            <RouterLink href="/#project-1">
+            <RouterLink legacyBehavior href="/#project-1">
               <a
                 className={styles.scrollIndicator}
                 data-status={status}
@@ -117,7 +117,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                 <VisuallyHidden>Scroll to projects</VisuallyHidden>
               </a>
             </RouterLink>
-            <RouterLink href="/#project-1">
+            <RouterLink legacyBehavior href="/#project-1">
               <a
                 className={styles.mobileScrollIndicator}
                 data-status={status}

@@ -109,7 +109,7 @@ export const Contact = () => {
               {...message}
             /> */}
             <p>
-              Send us an email at <b>Team@WinchesterSoftware.com</b> or book a meeting
+              Send us an email at <b>Team@WarwickSoftware.com</b> or book a meeting
               with one of our engineers below:
             </p>
             <Transition in={statusError} timeout={msToNum(tokens.base.durationM)}>

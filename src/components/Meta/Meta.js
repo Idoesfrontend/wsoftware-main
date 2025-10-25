@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 const siteUrl = process.env.NEXT_PUBLIC_WEBSITE_URL;
-const name = 'WinchesterSoftware';
+const name = 'WarwickSoftware';
 const twitterHandle = 'n/a';
 const defaultOgImage = `${siteUrl}/social-image.png`;
 

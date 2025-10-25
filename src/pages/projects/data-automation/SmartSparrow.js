@@ -479,7 +479,7 @@ export const SmartSparrow = () => {
               animations={['0:loop']}
               camera={[0.37, 1.02, 1.84]}
               meshes={['EarthPartial', 'Chunk']}
-              labels={['Competitors', 'Off-the-shelf Solutions', 'WinchesterSoftware']}
+              labels={['Competitors', 'Off-the-shelf Solutions', 'WarwickSoftware']}
             >
               <ProjectSection>
                 <ProjectSectionContent width="xl">
