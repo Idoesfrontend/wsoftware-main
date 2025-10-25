@@ -64,5 +64,6 @@ public/draco/
 public/og
 .serverless
 .next
+out/
 
 .env

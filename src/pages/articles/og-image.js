@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer');
+let puppeteer;
 const path = require('path');
 const fs = require('fs');
 const { createHash } = require('crypto');
@@ -29,6 +29,17 @@ export async function generateOgImage(props) {
     const fallbackBase = process.env.NEXT_PUBLIC_WEBSITE_URL || '';
     // Return existing placeholder when skipping generation on CI/Vercel
     return `${fallbackBase}/static/og-blank.png`;
+  }
+
+  // Lazily require puppeteer so the dependency can be removed in production builds
+  if (!puppeteer) {
+    try {
+      // eslint-disable-next-line global-require, import/no-extraneous-dependencies
+      puppeteer = require('puppeteer');
+    } catch (_err) {
+      const fallbackBase = process.env.NEXT_PUBLIC_WEBSITE_URL || '';
+      return `${fallbackBase}/static/og-blank.png`;
+    }
   }
 
   const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
