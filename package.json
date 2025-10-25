@@ -15,9 +15,9 @@
     "@storybook/manager-webpack5": "^6.5.10",
     "@storybook/react": "^6.5.10",
     "@svgr/webpack": "^6.3.1",
-    "esbuild": "^0.15.2",
+    "esbuild": "^0.25.11",
     "eslint": "^8.21.0",
-    "eslint-config-next": "^12.2.5",
+    "eslint-config-next": "^16.0.0",
     "fs-extra": "^10.1.0",
     "globby": "^13.1.2",
     "postcss": "^8.4.16",
@@ -39,15 +39,15 @@
   "dependencies": {
     "framer-motion": "^7.1.0",
     "mdx-bundler": "^9.0.1",
-    "next": "^12.2.5",
+    "next": "^16.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "three": "^0.146.0",
     "three-stdlib": "^2.18.1"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export -o build/",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
     "build:storybook": "build-storybook -o build-storybook && node scripts/draco-storybook",
     "deploy": "aws s3 sync --delete build/ s3://hamish-portfolio-site",
     "deploy:storybook": "aws s3 sync --delete build-storybook s3://hamish-portfolio-storybook",
@@ -70,7 +70,7 @@
     ]
   },
   "engines": {
-    "npm": ">=8.6.0",
-    "node": ">=18.0.0"
+    "npm": ">=10.0.0",
+    "node": ">=22.0.0"
   }
 }

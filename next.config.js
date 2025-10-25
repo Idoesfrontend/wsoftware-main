@@ -2,6 +2,8 @@ module.exports = {
   reactStrictMode: true,
   trailingSlash: true,
   pageExtensions: ['page.js', 'api.js'],
+  // Emit a fully static export into `out/`
+  output: 'export',
   webpack(config, { isServer }) {
     // Run custom scripts
     if (isServer) {
